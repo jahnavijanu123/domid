@@ -1,0 +1,56 @@
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let div1=document.createElement("div")
+    console.log(div1)
+    document.body.appendChild(div1);
+    div1.style.border="2px solid";
+    div1.style.height="350px";
+    div1.style.width="250px";
+    div1.style.borderRadius="50px"
+    div1.style.display="flex"
+    div1.style.flexDirection="column"
+    div1.style.alignItems="center"
+    div1.style.padding="10px"
+    div1.style.backgroundColor="lightblue"
+
+    let h=document.createElement("h1")
+    div1.appendChild(h)
+    h.innerHTML="ID CARD"
+
+    let img=document.createElement("img")
+    div1.appendChild(img)
+    img.setAttribute("src","https://cdn.icon-icons.com/icons2/3150/PNG/512/user_profile_female_icon_192701.png" )
+        
+    img.style.height="100px"
+
+    let name=document.createElement("b")
+    div1.appendChild(name)
+    name.innerHTML="NAME: JAHNAVI"
+    name.style.padding="10px"
+
+    let company=document.createElement("b")
+    div1.appendChild(company)
+    company.innerHTML="COMPANY: infosis"
+    name.style.padding="10px"
+    
+    let role=document.createElement("b")
+    div1.appendChild(role)
+    role.innerHTML="ROLE: Frontend Developer"
+    role.style.padding="10px"
+
+    let age=document.createElement("b")
+    div1.appendChild(age)
+    age.innerHTML="AGE: 21"
+    </script>
+</body>
+</html>
